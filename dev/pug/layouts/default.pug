@@ -13,13 +13,15 @@ html(lang="es")
 		// inject:css
 		// endinject
 		link(rel="stylesheet" href="css/main.min.css")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css")
 
 	body
 		block header
 			include ../partials/_header.pug
 
-		main(role="main")
+		div.c-wrapper
 			block content
+			include ../partials/_bigbanner.pug
 
 		block scripts
 			script(src="js/libs/bundle.js")

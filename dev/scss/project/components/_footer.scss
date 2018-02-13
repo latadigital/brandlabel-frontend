@@ -1,0 +1,43 @@
+@include component('footer') {
+	background: #2db9cc;
+
+	@include element('inner') {
+		margin: 0px auto;
+		padding: 40px 0px;
+		max-width: 1200px;
+		width: 100%;
+	}
+
+	@include element('brand') {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	@include element('image') {
+		display: inline-block;
+		line-height: 0;
+		max-width: 305px;
+		width: 100%;
+	}
+
+	@include element('socials') {
+		text-align: center;
+		margin-bottom: 20px;
+
+		a {
+			display: inline-block;
+			color: $color_white;
+			font-size: 20px;
+			padding: 0px 50px;
+		}
+	}
+
+	@include element('copyright') {
+		text-align: center;
+		color: $color_white;
+		font-size: 14px;
+		line-height:18px;
+		margin: 0px auto;
+		width: 75%;
+	}
+}

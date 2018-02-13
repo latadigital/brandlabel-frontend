@@ -3,16 +3,17 @@ $white:#FFF;
 $black:#000;
 $color_brand:'';
 $color_brand2:'';
-$color_text:'';
+$color_text: #626161;
+$color_hover:  #31c2d9;
 $color_bg:'';
-
+$color_white: #fff;
 // fonts
 $base_size:14px;
 $font_base:helvetica, arial, sans-serif;
 $font_highlight:helvetica, arial, sans-serif;
 
 // Common
-$transition-duration: .3s !default;
+$transition-duration: 250ms !default;
 
 // Margins & Paddings
 $numbers: 0, 10, 20, 30, 40, 50, 60, 70, 80, 90;

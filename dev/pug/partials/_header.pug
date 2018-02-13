@@ -1,4 +1,15 @@
 header.c-header
-	a.c-header__brand(href="#")
-		img.c-header__image(src="", alt="")
+	.c-header__buttons
+		.c-header__inner
+			.c-header__link Portal Clientes
+			.c-header__link.c-header__link--lightblue Contacto
+	.c-header__main
+		.c-header__inner
+			a.c-header__brand(href='#')
+				img.c-header__image(src='/img/header-logo.png' alt='Brand Label')
+			nav.c-header__nav
+				ul
+					each val in ['Inicio','Quiénes Somos', 'Productos', 'Blog', 'Clientes']
+						li
+							a(href="#")= val
 

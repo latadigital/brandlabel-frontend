@@ -1,4 +1,72 @@
 @include component('header') {
-	@include element('brand') {}
-	@include element('image') {}
+	@include element('buttons') {
+		background: #f9f9f9;
+		padding: 10px 0px;
+		text-align: right;
+	}
+
+	@include element('inner') {
+		height: 1%;
+		overflow: hidden;
+		margin: 0px auto;
+		max-width: 1200px;
+	}
+
+	@include element('link') {
+		background: #737373;
+		display: inline-block;
+		line-height: 31px;
+		font-size: 11px;
+		font-weight: 700;
+		text-align: center;
+		text-transform: uppercase;
+		border-radius: 5px;
+		color: #fff;
+		width: 130px;
+
+		&:nth-of-type(1) {
+			margin-right: 15px;
+		}
+
+		@include modifier('lightblue') {
+			background: #31c2d9;
+		}
+	}
+
+	@include element('main') {
+		height: 1%;
+		overflow: hidden;
+		padding: 25px 0px;
+	}
+
+	@include element('brand') {
+		float: left;
+	}
+
+	@include element('nav') {
+		float: right;
+		margin: 5px 0px;
+
+		ul {
+			li {
+				display: inline-block;
+				border-right: 1px solid $color_text;
+				&:last-child {
+					border-right: none;
+				}
+
+				a {
+					text-decoration: none;
+					color: $color_text;
+					font-size: 16px;
+					text-transform: uppercase;
+					transition: color $transition-duration;
+					padding: 0px 20px;
+					&:hover {
+						color: $color_hover;
+					}
+				}
+			}
+		}
+	}
 }
