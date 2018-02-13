@@ -1,0 +1,70 @@
+@include component('slider') {
+	background: #218795;
+
+	@include element('items') {
+		height:1%;
+		text-align: center;
+		overflow: hidden;
+	}
+
+	@include element('item') {
+		text-align: center;
+		padding: 50px 0px;
+		width: 100%;
+	}
+
+	@include element('image') {
+		display: inline-block;
+		vertical-align: middle;
+		padding-right: 70px;
+	}
+
+	@include element('info') {
+		display: inline-block;
+		text-align: left;
+		max-width: 500px;
+		vertical-align: middle;
+
+		h1 {
+			color: $color_white;
+			line-height: 40px;
+			font-size: 28px;
+			display: block;
+			text-transform: uppercase;
+			margin-bottom: 60px;
+
+			strong {
+				font-weight: 700;
+				display: block;
+				font-size: 60px;
+			}
+		}
+
+		p {
+			color: $color_white;
+			font-size: 18px;
+			line-height: 26px;
+			margin-bottom: 60px;
+		}
+
+		a {
+			background: #fff;
+			display: block;
+			text-transform: uppercase;
+			font-weight: 700;
+			border-radius: 5px;
+			color: #31c8d9;
+			width: 188px;
+			border:1px solid $color_white;
+			text-align: center;
+			transition: all $transition-base;
+			line-height: 50px;
+			&:hover {
+				background: none;
+				border:1px solid $color_white;
+				text-decoration: none;
+				color: $color_white;
+			}
+		}
+	}
+}

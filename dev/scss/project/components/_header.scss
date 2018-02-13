@@ -1,8 +1,11 @@
 @include component('header') {
+	border-bottom: 1px solid #d5d5d5;
+
 	@include element('buttons') {
 		background: #f9f9f9;
 		padding: 10px 0px;
 		text-align: right;
+		border-bottom: 1px solid #d5d5d5;
 	}
 
 	@include element('inner') {
