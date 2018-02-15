@@ -1,0 +1,11 @@
+.c-clientes
+    .c-clientes__inner
+        .c-clientes__images
+            img.c-clientes__image(src="/img/clientes-image.jpg")
+        h1.c-clientes__title Clientes
+        p.c-clientes__text Obtienen soluciones digitales a medida para mejorar la gestión de datos de sus productos, creando eficiencias y estimulando la productividad e innovación.
+        .c-clientes__logos
+            each logo in ['clientes-sodimac.jpg', 'clientes-mercado-libre.jpg', 'clientes-mts.jpg', 'clientes-dimerc.jpg', 'clientes-cencosud.jpg']
+                .c-clientes__logo
+                    img(src="/img/"+logo)
+        

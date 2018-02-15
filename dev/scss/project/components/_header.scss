@@ -24,8 +24,14 @@
 		text-align: center;
 		text-transform: uppercase;
 		border-radius: 5px;
+		text-decoration: none;
+		transition: background $transition-duration;
 		color: #fff;
 		width: 130px;
+		&:hover {
+			text-decoration: none;
+			background: #31c2d9;
+		}
 
 		&:nth-of-type(1) {
 			margin-right: 15px;
@@ -33,6 +39,9 @@
 
 		@include modifier('lightblue') {
 			background: #31c2d9;
+			&:hover {
+				background: #737373;
+			}
 		}
 	}
 

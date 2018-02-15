@@ -14,6 +14,7 @@ html(lang="es")
 		// endinject
 		link(rel="stylesheet" href="css/main.min.css")
 		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css")
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,700")
 
 	body
 		block header
@@ -22,6 +23,7 @@ html(lang="es")
 		div.c-wrapper
 			block content
 			include ../partials/_bigbanner.pug
+			include ../partials/_clientes.pug
 
 		block scripts
 			script(src="js/libs/bundle.js")

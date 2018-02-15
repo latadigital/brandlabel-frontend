@@ -2,7 +2,7 @@
 	background: #218795;
 
 	@include element('items') {
-		height:1%;
+		height: 1%;
 		text-align: center;
 		overflow: hidden;
 	}
@@ -43,7 +43,7 @@
 		p {
 			color: $color_white;
 			font-size: 18px;
-			line-height: 26px;
+			line-height: 30px;
 			margin-bottom: 60px;
 		}
 
