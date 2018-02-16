@@ -17,6 +17,18 @@
 		display: inline-block;
 		vertical-align: middle;
 		padding-right: 70px;
+		@media(max-width:1100px) {
+			margin-bottom: 20px;
+			padding: 0px 15px;
+			width: 100%;
+		}
+
+		img {
+			height: auto;
+			display: inline-block;
+			max-width: 528px;
+			width: 100%;
+		}
 	}
 
 	@include element('info') {
@@ -24,6 +36,10 @@
 		text-align: left;
 		max-width: 500px;
 		vertical-align: middle;
+		@media(max-width:1100px) {
+			text-align: center;
+			width: 100%;
+		}		
 
 		h1 {
 			color: $color_white;
@@ -32,11 +48,17 @@
 			display: block;
 			text-transform: uppercase;
 			margin-bottom: 60px;
+			@media(max-width:1100px) {
+				font-size: 20px;
+			}			
 
 			strong {
 				font-weight: 700;
 				display: block;
 				font-size: 60px;
+				@media(max-width:1100px) {
+					font-size: 50px;
+				}							
 			}
 		}
 
@@ -45,6 +67,10 @@
 			font-size: 18px;
 			line-height: 30px;
 			margin-bottom: 60px;
+			@media(max-width:1100px) {
+				margin: 0px auto 20px;
+				width: 90%;
+			}							
 		}
 
 		a {
@@ -65,6 +91,10 @@
 				text-decoration: none;
 				color: $color_white;
 			}
+
+			@media(max-width:1100px) {
+				display: inline-block;
+			}			
 		}
 	}
 }
