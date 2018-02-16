@@ -1,0 +1,60 @@
+@include component('jobs') {
+    position: relative;
+    
+    @include element('figure') {
+        width: 100%;
+    }
+
+    @include element('image') {
+        display: block;
+        line-height: 0px;
+        height: 1%;
+        width: 100%;
+    }
+
+    @include element('inner') {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    @include element('title') {
+        color: #fff;
+        text-align: center;
+        font-size: 42px;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+    @include element('text') {
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
+        margin: 0px auto 50px;
+        width: 80%;
+    }
+
+    @include element('link') {
+        display: block;
+        height: 48px;
+        background: #fff;
+        border: 1px solid #fff;
+        line-height: 48px;
+        text-align: center;
+        color: #31c8d9;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin: 0px auto;
+        border-radius: 5px;
+        transform: all $transition-duration;
+        width: 185px;
+        &:hover {
+            color: #fff;
+            background: none;
+            text-decoration: none;
+        }
+    }
+}
