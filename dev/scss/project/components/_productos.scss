@@ -1,0 +1,98 @@
+@include component('productos') {
+    background: #f9f9f9;
+    
+    @include element('inner') {
+        max-width: 1200px;
+        margin: 0px auto;
+        padding: 50px 0px;
+        width: 100%;
+    }
+    
+    @include element('title') {
+        font-size: 43px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    @include element('item') {
+        height: 1%;
+        overflow: hidden;   
+        position: relative;     
+    }
+
+    @include element('text') {
+        float: left;       
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%); 
+        width: 50%;    
+
+        @include modifier('right') {
+            left: initial;
+            right: 0px;
+        }
+    }
+
+    @include element('text-title') {
+        font-size: 36px;
+        color: $color_text;
+        font-weight: 700;
+        margin-bottom: 30px;
+        display: block;
+    }    
+
+    @include element('text-parrafo') {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+    
+    @include element('text-link') {
+        display: block;
+        background: #31c2d9;
+        border: 1px solid #31c2d9;
+        color: #fff;
+        text-align: center;
+        width: 188px;
+        height: 48px;
+        text-transform: uppercase;
+        transition: all $transition-duration;
+        font-size: 16px;
+        line-height: 48px;
+        border-radius: 5px;
+        &:hover {
+            background: none;
+            text-decoration: none;
+            color: #31c2d9;
+        }
+    }    
+
+    @include element('image') {
+        float: left;
+        text-align: center;
+        width: 50%;
+
+        @include modifier('right') {
+            float: right;
+        }        
+    }
+
+    @include element('image-thumb') {
+        max-width: 500px;
+        display: inline-block;
+        width: 100%;
+    }
+
+    @include element('separator') {
+        text-align: center;
+        width: 100%;
+
+        img {
+            max-width: 637px;
+            display: inline-block;
+            line-height: 0px;
+            width: 100%;
+        }
+    }
+}
