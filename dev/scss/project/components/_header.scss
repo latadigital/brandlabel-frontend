@@ -3,9 +3,12 @@
 
 	@include element('buttons') {
 		background: #f9f9f9;
-		padding: 10px 0px;
+		padding: 10px;
 		text-align: right;
 		border-bottom: 1px solid #d5d5d5;
+		@media(max-width:992px) {
+			text-align: center;
+		}				
 	}
 
 	@include element('inner') {
@@ -49,6 +52,9 @@
 		height: 1%;
 		overflow: hidden;
 		padding: 25px 0px;
+		@media(max-width:1200px) {
+			padding: 25px 10px;
+		}
 	}
 
 	@include element('brand') {
@@ -58,6 +64,9 @@
 	@include element('nav') {
 		float: right;
 		margin: 5px 0px;
+		@media(max-width:992px) {
+			display: none;
+		}		
 
 		ul {
 			li {

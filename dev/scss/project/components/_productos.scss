@@ -19,6 +19,13 @@
         height: 1%;
         overflow: hidden;   
         position: relative;     
+        @media(max-width:1200px) {
+            padding: 0px 20px;
+        }        
+
+        @media(max-width:1050px) {
+            margin-bottom: 50px;
+        }        
     }
 
     @include element('text') {
@@ -27,7 +34,21 @@
         top: 50%;
         left: 0px;
         transform: translateY(-50%); 
-        width: 50%;    
+        width: 50%;  
+        @media(max-width:1200px) {
+            left: 20px;
+        }
+        @media(max-width:1050px) {
+            position: initial;
+            top: initial;
+            transform: none;
+            width: 100%;
+            text-align: center
+        }          
+        
+        @media(max-width:1050px) {
+            width: 100%;
+        }        
 
         @include modifier('right') {
             left: initial;
@@ -47,6 +68,9 @@
         font-size: 16px;
         line-height: 24px;
         margin-bottom: 30px;
+        @media(max-width:1050px) {
+            width: 90%;
+        }        
     }
     
     @include element('text-link') {
@@ -67,12 +91,20 @@
             text-decoration: none;
             color: #31c2d9;
         }
+
+        @media(max-width:1050px) {
+            display: inline-block;
+        }        
     }    
 
     @include element('image') {
         float: left;
         text-align: center;
         width: 50%;
+        @media(max-width:1050px) {
+            margin-bottom: 20px;
+            width: 100%;
+        }        
 
         @include modifier('right') {
             float: right;
@@ -88,6 +120,9 @@
     @include element('separator') {
         text-align: center;
         width: 100%;
+        @media(max-width:1050px) {
+            display: none;
+        }          
 
         img {
             max-width: 637px;
@@ -95,5 +130,19 @@
             line-height: 0px;
             width: 100%;
         }
+    }
+}
+
+.on-mobile {
+    display: none;
+    @media(max-width:1050px) {
+        display: block;
+    }
+}
+
+.on-desktop {
+    display: block;
+    @media(max-width:1050px) {
+        display: none;
     }
 }

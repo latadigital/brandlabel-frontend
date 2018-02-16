@@ -22,6 +22,19 @@
         float: left;
         padding: 0px 25px;
         width: 25%;
+        @media(max-width:1050px) {
+            margin-bottom: 20px;
+            width: 33.3%;
+        }  
+        
+        @media(max-width:992px) {
+            margin-bottom: 20px;
+            width: 50%;
+        } 
+        
+        @media(max-width:500px) {
+            width: 100%;
+        }         
     }
 
     @include element('figure') {
