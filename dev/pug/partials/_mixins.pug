@@ -1,3 +1,17 @@
-mixin tooltip(args)
-	span.o-tooltip(data-tooltip=args.text)
-		i.o-tooltip__icon
+mixin news(title, ...items)
+    each item in items
+        .c-news__item
+            .c-news__figure
+                img.c-news__image(src="/img/home-news-thumb.jpg")
+            .c-news__news-data
+                .c-news__date
+                    i.fa.fa-calendar
+                    span 10 Nov 2017
+                .c-news__user
+                    i.fa.fa-user
+                    span Admin
+            .c-news__info
+                h2.c-news__title= title
+                if block
+                    block
+                a.c-news__link(src="#") Leer más 

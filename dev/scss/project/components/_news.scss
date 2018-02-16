@@ -1,0 +1,114 @@
+@include component('news') {
+    @include element('inner') {
+        margin: 0px auto;
+        padding: 35px 0px 70px;
+        max-width: 1250px;
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 42px;
+        text-transform: uppercase;
+        margin-bottom: 50px;        
+    }
+
+    @include element('items') {
+        height: 1%;
+        overflow: hidden;
+    }
+
+    @include element('item') {
+        float: left;
+        padding: 0px 25px;
+        width: 25%;
+    }
+
+    @include element('figure') {
+        display: block;
+        width: 100%;
+    }
+
+    @include element('image'){
+        display: block;
+        line-height: 0px;
+        height: auto;
+        width: 100%;
+    }
+
+    @include element('news-data') {
+        background: #f5f7fb;
+        height: 1%;
+        overflow: hidden;
+        padding: 0px 6px 10px;
+        margin-bottom: 20px;
+    }
+
+    @include element('date') {
+        float: left;
+        text-align: left;
+        border-bottom: 1px solid #e2e2e3;
+        padding: 6px 0px 16px;
+        width: 50%;
+
+        i {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        span {
+            display: inline-block;
+            vertical-align: middle;    
+            color: #000000;
+            font-weight: 700;
+            font-size: 12px;        
+        }        
+    }
+
+    @include element('user') {
+        float: left;
+        text-align: right;
+        border-bottom: 1px solid #e2e2e3;
+        padding: 6px 0px 16px;
+        width: 50%;
+
+        i {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        span {
+            display: inline-block;
+            vertical-align: middle;    
+            font-weight: 700;
+            color: #000000;
+            font-size: 12px;        
+        }
+    }
+    
+    @include element('title') {
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    @include element('text') {
+        font-size: 14px;
+        margin-bottom: 18px;
+        line-height: 20px;
+    }    
+
+    @include element('link') {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #009d93;
+        cursor: pointer;
+        transition: color $transition-duration;
+        &:hover {
+            color: #009d93 - 50;
+            text-decoration: none;
+        }
+    }
+}
