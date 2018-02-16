@@ -1,5 +1,5 @@
 @include component('footer') {
-	background: #2db9cc;
+	background: linear-gradient(to right, #3dc2d4 0%,#208290 90%,#208290 100%);
 
 	@include element('inner') {
 		margin: 0px auto;

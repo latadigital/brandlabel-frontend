@@ -1,5 +1,5 @@
 @include component('slider') {
-	background: #218795;
+	background: linear-gradient(to right, #3dc2d4 0%,#208290 90%,#208290 100%);
 
 	@include element('items') {
 		height: 1%;

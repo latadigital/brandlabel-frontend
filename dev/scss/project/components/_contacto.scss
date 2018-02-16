@@ -63,7 +63,7 @@
     }
 
     @include element('form') {
-        background: #63bcc9;
+        background: #31c8d9;
         float: left;
         padding-top: 50px;
         width: 60%;   
@@ -153,11 +153,12 @@
                         margin: 0px auto;
                         display: inline-block;
                         height: 42px;
+                        font-size: 14px;
                         text-align: center;
                         line-height: 42px;
                         transition: all $transition_duration;
                         cursor: pointer;
-                        color: #5ad3e1;
+                        color: #31c8d9;
                         width: 150px;
 
                         &:hover {
