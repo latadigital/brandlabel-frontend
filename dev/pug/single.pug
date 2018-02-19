@@ -1,0 +1,46 @@
+extends layouts/default.pug
+
+block vars
+    - var pageTitle = "Titulo de noticia"
+
+block content
+    .c-single
+        .c-single__bigbanner
+            img(src="/img/single-bigbanner.jpg")
+        .c-single__inner
+            .c-single__content
+                .c-single__content-image
+                    img(src="/img/single-image.jpg")
+                h1.c-single__content-title lorem ipsum dolor sit amet consecteteur
+                .c-single__data
+                    .c-single__date
+                        span.fa.fa-calendar
+                        i 10 Nov 2017
+                    span /
+                    .c-single__user
+                        span.fa.fa-user
+                        i Admin
+                .c-single__wrapper-text
+                    p
+                        strong Quisque pulvinar sit amet augue at aliquam. Pellentesque ipsum nunc, sollicitudin vitae accumsan eu, tempor ut nunc. Duis mollis in ante id efficitur. Suspendisse eu nibh est.
+                    p Cras consectetur mauris vel purus accumsan vehicula. Nulla a nunc in tellus suscipit mattis sed vitae nunc. In bibendum lacus id laoreet faucibus. Ut blandit, felis quis tincidunt ornare, velit turpis efficitur neque, ac tincidunt magna metus non elit. Suspendisse rhoncus, mi sit amet aliquam vehicula, massa urna aliquet dui, at faucibus justo tortor vitae metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer orci purus, porta placerat fermentum ac, vestibulum sed lectus. Nullam tincidunt sodales ante a auctor. Morbi ornare massa quis dui blandit, vitae tempus ex iaculis. Suspendisse sed sapien vel purus egestas pulvinar. Quisque id nibh ornare, convallis enim ac, vestibulum erat. Nunc pharetra arcu sit amet mi scelerisque, eu sollicitudin lorem molestie.
+                    p Donec vulputate, sapien eget consectetur fringilla, elit odio feugiat lorem, ut viverra lectus lacus eu urna. Vestibulum sagittis, diam in mattis mollis, augue ex dignissim lectus, vitae rutrum diam dolor vitae massa. Curabitur pulvinar dolor nunc, sed bibendum neque efficitur quis. Sed velit arcu, egestas sed ligula sit amet, eleifend viverra mi. In sit amet urna metus. Integer ac finibus sem. Maecenas aliquet neque pharetra, consectetur metus vitae, venenatis neque. Nullam commodo ligula vitae nisl volutpat mattis. Nam at bibendum tortor, ullamcorper viverra nunc. Aliquam erat volutpat. In urna ipsum, commodo a lorem sit amet, laoreet elementum metus.                    
+
+            .c-single__sidebar
+                h1 Entradas recientes
+                
+                .c-single__items
+                    each val in [1, 2, 3, 4, 5]
+                        .c-single__item
+                            .c-single__item-thumb
+                                img(src="/img/single-sidebar-thumb.jpg")
+                            .c-single__item-text
+                                h3 Lorem ipsum dolor sit amet, consectetuer.
+                                .c-single__item-date
+                                    span.fa.fa-calendar
+                                    i 10 Nov 2017
+                                a.c-single__item-link [+] Leer más                        
+
+    include partials/_contacto.pug
+
+block append scripts
