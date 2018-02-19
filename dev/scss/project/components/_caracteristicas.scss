@@ -1,0 +1,56 @@
+@include component('caracteristicas') {
+    @include element('inner') {
+        margin: 0px auto;
+        max-width: 1200px;
+        padding: 60px 0px;
+        width: 100%;
+    }
+
+    @include element('title') {
+        text-align: center;
+        font-size: 42px;
+        text-transform: uppercase;
+        margin-bottom: 50px;  
+        @media(max-width:992px) {
+            font-size: 25px;
+        }         
+    }    
+
+    @include element('items') {
+        height: 1%;
+        overflow: hidden;
+    }
+
+    @include element('item'){
+        float: left;
+        width: 33.3%;
+        @media(max-width:992px) {
+            width: 100%;
+        }
+    }
+
+    @include element('item-icon') {
+        display: block;
+        padding: 0px 20px;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    @include element('item-title') {
+        font-size: 18px;
+        color: #656565;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    @include element('item-text') {
+        font-size: 14px;
+        color: #656565;
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 0px 20px;
+    }    
+}

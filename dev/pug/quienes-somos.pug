@@ -1,0 +1,17 @@
+extends layouts/default.pug
+
+block vars
+    - var pageTitle = 'Quienes Somos'
+    - var bannerTitle = 'Quienes Somos'
+    - var bannerText = 'Somos una empresa que entregamos soluciones tecnológicas para la optimización de data de producto y automatización de contenido para retail e E-commerce.'
+    - var newsTitle = 'Prensa y eventos'
+    - var srcBanner = "/img/quienes-somos-banner.jpg"
+
+block content
+    include partials/_p-banner.pug
+    include partials/_caracteristicas.pug
+    include partials/_news.pug
+    include partials/_jobs.pug
+    include partials/_contacto.pug
+
+block append scripts
