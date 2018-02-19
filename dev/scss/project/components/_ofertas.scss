@@ -1,0 +1,163 @@
+@include component('ofertas') {
+    background: #f9f9f9;
+
+    @include element('inner') {
+        max-width: 1200px;
+        margin: 0px auto;
+        padding: 70px 50px;
+        width: 100%;
+
+        h1 {
+            font-size: 43px;
+            font-weight: 700;
+            text-align: center;   
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+    }
+
+    @include element('items') {
+        background: #fff; 
+        height: 1%;
+        overflow: hidden;
+        padding: 54px;
+    }
+
+    @include element('item') {
+        height: 1%;
+        margin-bottom: 30px;
+        overflow: hidden;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }    
+
+    @include element('text') {
+        float: left;
+        width: 50%;
+
+        p {
+            font-weight: 700;
+            font-size: 16px;
+            margin-bottom: 7px;
+
+            strong {
+                font-weight: 400;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    @include element('actions') {
+        float: left;
+        margin: 13px 0px;
+        width: 50%;
+    }    
+
+    @include element('link') {
+        display: inline-block;
+        margin: 0px auto;
+        height: 49px;
+        line-height: 49px;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+        border-radius: 5px;
+        font-weight: 700;
+        border: 1px solid #31c7d9;
+        cursor: pointer;
+        transition: all $transition-duration;
+        background: linear-gradient(to bottom, #31c7d9 0%,#31acd9 100%);
+        margin-right: 40px;
+        width: 184px;
+
+        &:hover {
+            background: none;
+            text-decoration: none;
+            color: #31c7d9;
+        }        
+    }
+}
+
+@include component('carrusel') {
+    @include element('inner') {
+        margin: 0px auto;
+        padding: 60px 0px;
+        max-width: 1200px;
+
+        h1 {
+            font-size: 43px;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;            
+        }
+    }
+
+    @include element('slides') {
+        height: 1%;
+        overflow: hidden;
+    }
+
+    @include element('slide') {
+        float: left;
+        padding: 0px 5px;
+        width: 33.3%;
+
+        img {
+            height: auto;
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+@include component('testimonios') {
+    @include element('inner') {
+        margin: 0px auto;
+        padding: 60px 0px;
+        max-width: 1200px;        
+    }
+
+    @include element('slides') {
+        height: 1%;
+        overflow: hidden;
+    }
+
+    @include element('slide') {
+        text-align: center;
+        padding: 0px 30px;
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            font-style: italic;
+            display: block;
+            margin: 0px auto 40px;
+            width: 80%;
+        }
+
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26px;
+
+            span {
+                font-weight: 400;
+                display: block;
+            }
+        }
+    }
+
+    @include element('slide-thumb') {
+        display: block;
+        margin: 0px auto 20px;
+        height: 138px;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 138px;
+    }
+}

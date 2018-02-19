@@ -1,0 +1,14 @@
+extends layouts/default.pug
+
+block vars
+    - var pageTitle = 'Trabaja con nosotros'
+    - var bannerTitle = 'Únete al equipo B&L'
+    - var bannerText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam luctus lacus massa. Mauris congue sed lectus porta facilisis. Maecenas semper sed turpis id sollicitudin.'
+    - var srcBanner = '/img/trabaja-banner.jpg'
+
+block content
+    include partials/_p-banner.pug
+    include partials/_ofertas.pug
+    include partials/_carrusel.pug
+    include partials/_testimonios.pug
+    include partials/_contacto.pug
