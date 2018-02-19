@@ -1,0 +1,21 @@
+extends layouts/default.pug
+
+block vars
+    - pageTitle = 'Blog'
+
+block content
+    .c-blog
+        .c-blog__head
+            .c-blog__figure
+                img(src="/img/blog-head.jpg")
+            h1.c-blog__title Blog Brand&Label    
+        .c-blog__inner
+            .c-blog__outstanding
+                h2 BRAND&LABEL EN ECONOMÍA Y NEGOCIOS DE EL MERCURIO: 
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eros libero, euismod id tincidunt vitae, dictum non quam. Duis risus erat, euismod in bibendum quis, maximus fringilla magna. Sed maximus, mi a congue imperdiet, est massa sollicitudin tellus, ut.
+                a.c-blog__outstanding-link Leer más
+    include partials/_news.pug
+    include partials/_news.pug
+    include partials/_contacto.pug
+
+block append scripts
