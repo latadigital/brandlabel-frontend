@@ -1,0 +1,11 @@
+extends layouts/default.pug
+
+block vars
+    - pageTitle = 'Landing'
+    - navVisible = true
+
+block content
+    include partials/_news.pug
+    include partials/_contacto.pug
+    
+block append scripts
