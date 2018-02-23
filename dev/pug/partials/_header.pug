@@ -7,9 +7,16 @@ header.c-header
 		.c-header__inner
 			a.c-header__brand(href='#')
 				img.c-header__image(src='/img/header-logo.png' alt='Brand Label')
-			nav.c-header__nav
-				ul
-					each val in ['Inicio','Quiénes Somos', 'Productos', 'Blog', 'Clientes']
+			if navVisible
+				nav.c-header__nav
+					ul
 						li
-							a(href="#")= val
-
+							a(href="/") Inicio
+						li
+							a(href="quienes-somos.html") Quienes somos
+						li
+							a(href="/") Productos
+						li
+							a(href="blog.html") Blog																		
+						li
+							a(href="#") Clientes

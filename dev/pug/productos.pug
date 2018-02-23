@@ -1,0 +1,66 @@
+extends layouts/default.pug
+
+block vars
+    - var pageTitle = 'Blog'
+    - var navVisible = true
+
+block content
+    .c-product
+        .c-product__bigproducts
+            .c-product__inner
+                .c-product__items
+                    .c-product__item
+                        h2 RYH
+                        figure
+                            img(src="/img/product-info-ryh.svg")
+                        p Enrequecimiento y validación de ichas técnicas para ctálogos online.
+                    .c-product__item
+                        h2 RYH
+                        figure
+                            img(src="/img/product-info-step.svg")
+                        p Almacena datos técnicos y de marketing en la nube, para difundirlos en diversos canales.
+                    .c-product__item
+                        h2 RYH
+                        figure
+                            img(src="/img/product-info-ax.svg")
+                        p Generación de descripciones de productos para e-commerce y retail.
+        .c-product__inner
+            .c-product__caracteristicas
+                .c-product__caracteritica
+                    .c-product__caracteristica-logo
+                        img(src="/img/product-logo-ryh.png")
+                    ul
+                        li Incrementa 
+                            small CVR y tráfico directo.
+                        li Aumenta 
+                            small Las ventas
+                        li Disminuye 
+                            small Costos por devoluciones
+                .c-product__caracteritica
+                    .c-product__caracteristica-logo
+                        img(src="/img/product-logo-step.png")
+                    ul
+                        li Administra 
+                            small toda la información en un solo lugar.
+                        li Disminuye 
+                            small los costos operacionales de logística.
+                        li Adapta 
+                            small fácilmente toda la información a nuevas plataformas. 
+                .c-product__caracteritica
+                    .c-product__caracteristica-logo
+                        img(src="/img/product-logo-ax.png")
+                    ul
+                        li Fortalece 
+                            small Tu marca
+                        li Aumenta 
+                            small Tu tasa de conversión
+                        li SEO 
+                            small Friendly
+            .c-clientes__logos
+                each logo in ['clientes-sodimac.jpg', 'clientes-mercado-libre.jpg', 'clientes-mts.jpg', 'clientes-dimerc.jpg', 'clientes-cencosud.jpg']
+                    .c-clientes__logo
+                        img(src="/img/"+logo)
+    include partials/_testimonios.pug
+    include partials/_contacto.pug
+
+block append scripts
