@@ -7,6 +7,9 @@
         
         @include modifier('pInner') {
             padding: 35px 25px;
+            @media(max-width: 992px) {
+                padding: 0px;
+            }
         }
     }   
 
@@ -21,6 +24,10 @@
         float: left;
         text-align: center;
         width: 20%;
+        @media(max-width:992px) {
+            margin-bottom: 0px;
+            width: 100%;
+        }            
 
         img {
             overflow: hidden;
@@ -28,6 +35,9 @@
             display: inline-block;         
             height: 144px;
             width: 144px;
+            @media(max-width:992px) {
+                max-width: 150px;
+            }            
         }
     }
 
@@ -36,6 +46,10 @@
         text-align: center;
         margin: 44px 0px;
         width: 40%;
+        @media(max-width:992px) {
+            margin: 40px 0px;
+            width: 100%;
+        }            
 
         h1 {
             color: #fff;
@@ -54,6 +68,9 @@
         float: right;
         text-align: center;
         width: 40%;
+        @media(max-width:992px) {
+            width: 100%;
+        }
     }
 
     @include element('product') {
@@ -61,14 +78,25 @@
         text-align: center;
         padding: 0px 5px;
         width: 33.3%;
+        @media(max-width:992px) {
+            margin-bottom: 30px;
+            width: 100%;
+        }        
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
 
         img {
             width: 100%;
             overflow: hidden;
             border-radius: 50%;
+            @media(max-width:992px) {
+                max-width: 150px;
+            }
         }
     }   
-    
+
     @include element('status') {
         background: #f5f6fb;
     }
@@ -78,6 +106,10 @@
         padding: 25px;
         float: left;
         width: 60%;
+        @media(max-width:992px) {
+            margin: 40px 0px;
+            width: 100%;
+        }            
 
         h2 {
             font-size: 18px;
@@ -107,13 +139,20 @@
         background: linear-gradient(to bottom, #b9d573 0%,#8fc509 100%);
         display: block;
         max-width: 400px;
+        border: 1px solid #b9d573;
         border-radius: 5px;
         line-height: 43px;
         color: #fff;
         font-weight: 500;
         text-align: center;
+        cursor: pointer;
+        transition: all $transition_duration;
         margin: 0px auto;
         width: 100%;
+        &:hover {
+            background: none;
+            color: #b9d573;
+        }
     }
 
     @include element('contacto') {
@@ -124,7 +163,12 @@
         width: 40%;
         @include modifier('noPadTop') {
             padding: 0px 50px 0px;
-        }        
+        }  
+        @media(max-width:992px) {
+            margin: 40px 0px;
+            padding: 15px 20px 0px;
+            width: 100%;
+        }                  
 
         h2 {
             font-size: 31px;
@@ -152,6 +196,11 @@
         @include modifier('mBottom') {
             margin-bottom: 20px;
         }        
+
+        @media(max-width:700px) {
+            display: block;
+            float: none;
+        }
     }
 
     @include element('contacto-link') {
@@ -185,6 +234,9 @@
         background: #f9f9f9;
         padding: 10px 15px;
         margin-bottom: 2px;
+        @media(max-width:992px) {
+            margin-bottom: 10px;
+        }         
         &:last-child {
             margin-bottom: 30px;
         }
@@ -193,6 +245,10 @@
     @include element('reporte-nombre') {
         float: left;
         width: 50%;
+        @media(max-width:992px) {
+            text-align: center;
+            width: 100%;
+        }                           
 
         p {
             font-size: 18px;
@@ -203,6 +259,10 @@
     @include element('fecha') {
         float: left;
         width: 50%;
+        @media(max-width:992px) {
+            text-align: center;
+            width: 100%;
+        }         
 
         p {
             display: block;
@@ -234,7 +294,7 @@
         }        
     }
 
-   @include element('reportes-link')  {
+    @include element('reportes-link')  {
         background: linear-gradient(to bottom, #31c6d9 0%,#31acd9 100%);
         display: block;
         border-radius: 5px;
@@ -255,29 +315,29 @@
             color: #31bdd9;
             text-decoration: none;
         }
-   }
+    }
 
-   @include element('reportes-title') {
-       font-size: 32px;
-       text-align: center;
-       text-transform: uppercase;
-       font-weight: 300;
-       margin-bottom: 20px;
-   }
+    @include element('reportes-title') {
+        font-size: 32px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
 
-   @include element('propuesta') {
-       position: relative;
-       margin-bottom: 30px;
-   }
+    @include element('propuesta') {
+        position: relative;
+        margin-bottom: 30px;
+    }
 
-   @include element('propuesta-figure') {
+    @include element('propuesta-figure') {
         width: 100%;
         @media(max-width:1050px) {
             overflow: hidden;
         }            
-   }
+    }
 
-   @include element('propuesta-image') {
+    @include element('propuesta-image') {
         display: block;
         line-height: 0px;
         height: 1%;
@@ -288,18 +348,18 @@
             left: 50%;
             transform: translateX(-50%);
         }       
-   }
+    }
 
-   @include element('propuesta-inner') {
+    @include element('propuesta-inner') {
         position: absolute;
         top: 50%;
         transform: translate(-50%, -50%);
         left: 50%;
         max-width: 1200px;
         width: 100%;       
-   }
+    }
 
-   @include element('propuesta-title') {
+    @include element('propuesta-title') {
         color: #fff;
         text-align: center;
         font-size: 31px;
@@ -309,9 +369,9 @@
             font-size: 30px;
             margin-bottom: 25px;
         }       
-   }
+    }
 
-   @include element('propuesta-link') {
+    @include element('propuesta-link') {
         display: block;
         height: 48px;
         background: #fff;
@@ -330,42 +390,66 @@
             background: none;
             text-decoration: none;
         }       
-   }
+    }
 
-   @include element('contrata') {
-       background: url('../img/intranet-modulo-bg.jpg');;
-       float: left;
-       width: 60%;
+    @include element('contrata') {
+        background: url('../img/intranet-modulo-bg.jpg');;
+        float: left;
+        width: 60%;
+        @media(max-width:992px) {
+            text-align: center;
+            width: 100%;
+        }            
 
-       h2 {
-           font-size: 30px;
-           text-align: center;
-           text-transform: uppercase;
-           padding: 37px 0px;
-           color: #fff;
-       }
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 37px 0px;
+            color: #fff;
+            @media(max-width:992px) {
+                font-size: 22px;
+            }                               
+        }
 
-       ul {
-           text-align: center;
-           padding: 10px 0px;
-           
-           li {
-               font-size: 24px;
-               padding: 5px;
-               display: inline-block;
-               clear: both;
-               position: relative;
-               color: #fff;
-               &:after {
-                   background: url('../img/intranet-arrow.png');
-                   position: absolute;
-                   top: 6px;
-                   left: -30px;
-                   content: '';
-                   height: 23px;
-                   width: 23px;
-               }
-           }
-       }
-   }
+        ul {
+            text-align: center;
+            padding: 10px 0px;
+            @media(max-width:992px) {
+                display: inline-block;
+                width: 90%;
+            }                
+            
+            li {
+                font-size: 24px;
+                padding: 5px;
+                display: inline-block;
+                clear: both;
+                position: relative;
+                color: #fff;
+                @media(max-width:600px) {
+                    font-size: 18px;
+                }
+                
+                @media(max-width:600px) {
+                    padding-left: 30px;
+                    display: block;
+                    text-align: left;
+                }
+
+                &:after {
+                    background: url('../img/intranet-arrow.png');
+                    position: absolute;
+                    top: 6px;
+                    left: -30px;
+                    content: '';
+                    height: 23px;
+                    width: 23px;
+                    @media(max-width:600px) {
+                        left: -5px;
+                    }                    
+                }
+            }
+        }
+    }
 }
