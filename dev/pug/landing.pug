@@ -5,6 +5,95 @@ block vars
     - navVisible = true
 
 block content
+    .c-jobs
+        .c-jobs__figure
+            img.c-jobs__image.c-jobs__image--landing(src="/img/landing-ryh-bg.jpg")
+        .c-jobs__inner
+            h1.c-jobs__title.c-jobs__title--mb30
+                img(src="/img/landing-ryh-logo.png")
+            p.c-jobs__text Servicio de Repoblamiento y Homologación de atributos de productos para catálogos de empresas Retail e e-Commerce.
+            a.c-jobs__link(href="jobs.html") Contáctanos
+    .c-landing
+        .c-landing__inner
+            .c-landing__caracteristicas
+                h1 Beneficios de una data limpia y homologada
+                .c-landing__items
+                    .c-landing__item
+                        figure
+                            img(src="/img/landing-ryh-icono-1.jpg")
+                        p Incrementa tasas de conversión y tráfico directo.
+                    .c-landing__item
+                        figure
+                            img(src="/img/landing-ryh-icono-2.jpg")
+                        p Fortalece la reputación de tu marca al tener datos fidedignos: fidelización de clientes.
+                    .c-landing__item
+                        figure
+                            img(src="/img/landing-ryh-icono-3.jpg")
+                        p Disminuye costos por devoluciones y es posible proyectar costos operacionales y de envío.
+                    .c-landing__item
+                        figure
+                            img(src="/img/landing-ryh-icono-4.jpg")
+                        p Mejora el uso de información a nivel corporativo para apoyar experiencia omnicanal.
+            .c-clientes__logos.u-mb60
+                each logo in ['clientes-sodimac.jpg', 'clientes-mercado-libre.jpg', 'clientes-mts.jpg', 'clientes-dimerc.jpg', 'clientes-cencosud.jpg']
+                    .c-clientes__logo
+                        img(src="/img/"+logo)                    
+    .c-productos
+        .c-productos__inner
+            //Producto
+            .c-productos__item
+                .c-productos__image.c-productos__image--right.on-mobile
+                    img.c-productos__image-thumb(src="/img/productos-ryh-image.jpg" href="RyH")        
+                .c-productos__text
+                    h2.c-productos__text-title Cliente informado
+                    p.c-productos__text-parrafo A partir de la limpieza y completitud de datos, generamos mayor rentabilidad en los eCommerce, mejorando tasas de conversión y ventas. Un cliente que cuenta con y un un catálogo estructurado y con la mayor cantidad de información de producto, completa de manera eficiente el proceso de compra.
+                .c-productos__image.c-productos__image--right.on-desktop
+                    img.c-productos__image-thumb(src="/img/productos-ryh-image.jpg" href="RyH")
+            //Fin Producto
+            .c-productos__separator
+                img(src="/img/landing-separator-1.png")
+            //Producto
+            .c-productos__item
+                .c-productos__image
+                    img.c-productos__image-thumb(src="/img/productos-ryh-image.jpg" href="RyH")        
+                .c-productos__text.c-productos__text--right
+                    h2.c-productos__text-title Levantamos 10.000 datos en un día
+                    p.c-productos__text-parrafo Trabajamos recolectando datos en terreno, web y proveedores, los que luego son procesados, validados y homologados por nuestro equipo de redactores, logrando en promedio, una completitud de data de un XX% con nuestros clientes.
+            //Fin Producto
+            .c-productos__separator
+                img(src="/img/landing-separator-2.png") 
+            //Producto   
+            .c-productos__item
+                .c-productos__image.c-productos__image--right.on-mobile
+                    img.c-productos__image-thumb(src="/img/productos-ryh-image.jpg" href="RyH")                        
+                .c-productos__text
+                    h2.c-productos__text-title Es posible alimentar otras herramientas
+                    p.c-productos__text-parrafo Gracias a una data completa, validada y estructurada se eliminan los problemas que enfrentan las compañías con el dirty data. Además es posible alimentar e integrarse a otros sistemas de gestión de datos, para que toda la empresa maneje la misma información.  Llegando a automatizar procesos de redacción de contenido en base a datos maestros.
+                .c-productos__image.c-productos__image--right.on-desktop
+                    img.c-productos__image-thumb(src="/img/productos-ryh-image.jpg" href="RyH")                
+    .c-landing
+        .c-landing__inner
+            .c-landing__exitos
+                h1 Casos de éxitos
+                .c-landing__exitos-items
+                    .c-landing__exitos-item
+                        h2 Título del video
+                        figure
+                            img(src="/img/video-thumb.png")
+                    .c-landing__exitos-item
+                        h2 Título del video
+                        figure
+                            img(src="/img/video-thumb.png")
+                a.c-landing__exitos-link(href="#") Ver más
+            .c-landing__productos
+                h1 Conoce  nuestros productos
+                .c-landing__productos-items
+                    .c-landing__productos-item
+                        figure
+                            img(src="/img/landing-ax-banner.png")
+                    .c-landing__productos-item
+                        figure
+                            img(src="/img/landing-step-banner.png")
     include partials/_news.pug
     include partials/_contacto.pug
     

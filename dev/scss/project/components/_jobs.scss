@@ -2,10 +2,11 @@
     position: relative;
     
     @include element('figure') {
+        overflow: hidden;
         width: 100%;
         @media(max-width:1050px) {
             overflow: hidden;
-        }        
+        } 
     }
 
     @include element('image') {
@@ -18,6 +19,13 @@
             position: relative;
             left: 50%;
             transform: translateX(-50%);
+        }
+
+        @include modifier('landing') {
+            min-width: 1920px;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);            
         }
     }
 
@@ -39,7 +47,11 @@
         @media(max-width:1050px) {
             font-size: 30px;
             margin-bottom: 25px;
-        }        
+        }   
+
+        @include modifier('mb30') {
+            margin-bottom: 30px;
+        }
     }
 
     @include element('text') {

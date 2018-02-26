@@ -1,0 +1,176 @@
+@include component('landing') {
+    @include element('inner') {
+        margin: 0px auto;
+        max-width: 1200px;
+        width: 100%;
+    }
+
+    @include element('caracteristicas') {
+        padding: 60px 0px;
+        
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 60px;
+            @media(max-width: 662px) {
+                font-size: 25px;
+            }            
+        }
+    }
+
+    @include element('items') {
+        height: 1%;
+        overflow: hidden;
+    }
+
+    @include element('item') {
+        float: left;
+        width: 25%;
+        padding: 0px 20px;
+        text-align: center;
+        border-right: 1px solid #d7d7d7;
+        min-height: 225px;
+        @media(max-width: 992px) {
+            width: 50%;
+        }
+
+        @media(max-width: 662px) {
+            border-right: none;
+            width: 100%;
+        }
+
+        &:last-child {
+            border-right: none;
+        }
+
+        figure {
+            text-align: center;
+            padding: 0;
+            margin: 0px 0px 20px;
+            width: 100%;
+
+            img {
+                display: inline-block;
+                max-width: 100px;
+                width: 100%;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+
+    @include element('exitos') {
+        height: 1%;
+        padding: 50px 0px 10px;
+        overflow: hidden;
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 40px;
+            @media(max-width: 662px) {
+                font-size: 25px;
+            }                        
+        }
+    }
+
+    @include element('exitos-items') {
+        height: 1%;
+        overflow: hidden;
+    }    
+
+    @include element('exitos-item') {
+        float: left;
+        padding: 0px 15px;
+        width: 50%;
+        @media(max-width: 662px) {
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 300;
+            text-align: center;
+            border-bottom: 1px solid #c8c4c4;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            color: #656565;
+            @media(max-width: 662px) {
+                font-size: 16px;
+            }              
+        }
+
+        figure {
+            margin: 0;
+            width: 100%;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    @include element('productos') {
+        height: 1%;
+        padding: 50px 0px 0px;
+        overflow: hidden;
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 40px;
+            @media(max-width: 662px) {
+                font-size: 25px;
+            }               
+        }
+    }
+
+    @include element('productos-item') {
+        float: left;
+        padding: 0px 15px;
+        width: 50%;
+        @media(max-width: 662px) {
+            margin-bottom: 30px;
+            width: 100%;
+        }        
+
+        figure {
+            margin: 0;
+            width: 100%;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+    }    
+
+    @include element('exitos-link') {
+        background: linear-gradient(to bottom, #31c6d9 0%,#31acd9 100%);
+        display: block;
+        border-radius: 5px;
+        line-height: 43px;
+        clear: both;
+        color: #fff;
+        font-weight: 500;
+        text-align: center;
+        margin: 40px auto 0px;
+        border: 1px solid #31bdd9;
+        transition: all $transition_duration;
+        cursor: pointer;
+        max-width: 190px;
+        text-transform: uppercase;
+        font-size: 17px;
+        width: 100%;
+        &:hover {
+            background: none;
+            color: #31bdd9;
+            text-decoration: none;
+        }        
+    }
+}
