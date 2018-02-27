@@ -79,7 +79,7 @@
 				a {
 					text-decoration: none;
 					color: $color_text;
-					font-size: 16px;
+					font-size: 14px;
 					text-transform: uppercase;
 					transition: color $transition-duration;
 					padding: 0px 20px;
@@ -89,5 +89,18 @@
 				}
 			}
 		}
+	}
+}
+
+.nav__fixed {
+	background: #fff;
+	top: 0px;
+	height: 79px;
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+
+	.c-header__inner {
+		height: 79px;
 	}
 }

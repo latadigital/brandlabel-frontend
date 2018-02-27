@@ -74,7 +74,7 @@
         float: left;
         position: relative;
         padding: 0px 60px 0px 30px;
-        height: 566px;
+        height: 478px;
         width: 40%;
         @media(max-width:996px) {
             height: auto;
@@ -115,7 +115,7 @@
         h1 {
             color: #fff;
             text-align: center;
-            font-size: 37px;
+            font-size: 32px;
             text-transform: uppercase;
             margin-bottom: 25px;
         }
@@ -136,7 +136,7 @@
                     width: 100%;
 
                     textarea {
-                        height: 169px;
+                        height: 120px;
                         border: 1px solid #fff;
                         background: none;
                         width: 100%;
@@ -146,24 +146,24 @@
                         resize:none;
                         &::-webkit-input-placeholder {
                             color: #fff;
-                            font-size: 23px;
+                            font-size: 16px;
                         }
                         &::-moz-placeholder {
                             color: #fff;
-                            font-size: 23px;
+                            font-size: 16px;
                         }
                         &:-ms-input-placeholder {
                             color: #fff;
-                            font-size: 23px;
+                            font-size: 16px;
                         }
                         &:-moz-placeholder {
                             color: #fff;
-                            font-size: 23px;
+                            font-size: 16px;
                         }                         
                     }
 
                     input {
-                        height: 48px;
+                        height: 38px;
                         color: #fff;
                         padding: 0px 15px;
                         border: 1px solid #fff;
@@ -172,19 +172,19 @@
                         width: 100%;
                         &::-webkit-input-placeholder {
                             color: #fff;
-                            font-size: 23px;
+                            font-size: 16px;
                         }
                         &::-moz-placeholder {
                             color: #fff;
-                            font-size: 23px;
+                            font-size: 16px;
                         }
                         &:-ms-input-placeholder {
                             color: #fff;
-                            font-size: 23px;
+                            font-size: 16px;
                         }
                         &:-moz-placeholder {
                             color: #fff;
-                            font-size: 23px;
+                            font-size: 16px;
                         }                        
                     }
                 }
