@@ -297,6 +297,7 @@
 
     @include element('fecha') {
         float: left;
+        text-align: right;
         width: 50%;
         @media(max-width:992px) {
             text-align: center;
@@ -304,12 +305,11 @@
         }         
 
         p {
-            display: block;
-            float: left;
+            display: inline-block;
             text-align: center;
+            padding-right: 50px;
             font-size: 18px;
             margin: 7px 0px;            
-            width: 50%;
         }
     }
 
@@ -325,6 +325,7 @@
         margin: 0px auto 0px;
         cursor: pointer;
         border: 1px solid #31bdd9;
+        max-width: 150px;
         width: 50%;
         &:hover {
             background: none;
