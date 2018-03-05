@@ -2,7 +2,10 @@
     @include element('inner') {
         margin: 0px auto;
         max-width: 1200px;
-        width: 100%;        
+        width: 100%;
+				@media(max-width: 1280px) {
+					max-width: 1050px;
+				}
     }
 
     @include element('head') {
@@ -31,7 +34,7 @@
         font-size: 51px;
         @media(max-width: 992px) {
             font-size: 32px;
-        }          
+        }
     }
 
     @include element('outstanding') {
@@ -47,7 +50,7 @@
             margin-bottom: 30px;
             @media(max-width: 992px) {
                 font-size: 25px;
-            }            
+            }
         }
 
         p {
@@ -58,7 +61,7 @@
             width: 80%;
             @media(max-width: 992px) {
                 width: 90%;
-            }              
+            }
         }
     }
 
@@ -93,7 +96,7 @@
         margin-bottom: 70px;
         @media(max-width: 992px) {
             display: none;
-        }         
+        }
 
         img {
             min-width: 1980px;
@@ -127,13 +130,13 @@
         width: 35%;
         @media(max-width: 992px) {
             width: 100%;
-        }        
+        }
 
         h1 {
             margin-bottom: 30px;
         }
-    }    
-    
+    }
+
     @include element('content-image') {
         display: block;
         margin-bottom: 20px;
@@ -190,8 +193,8 @@
             vertical-align: middle;
             font-style: initial;
         }
-    }  
-    
+    }
+
     @include element('wrapper-text') {
         padding: 0px 0px 80px;
 
@@ -213,11 +216,11 @@
         @media(max-width: 992px) {
             float: left;
             width: 50%;
-        }        
+        }
 
         @media(max-width: 762px) {
             width: 100%;
-        }                
+        }
     }
 
     @include element('item-thumb') {
@@ -226,7 +229,7 @@
         @media(max-width: 400px) {
             margin-bottom: 20px;
             width: 100%;
-        }         
+        }
 
         img {
             display: block;
@@ -241,13 +244,13 @@
         @media(max-width: 400px) {
             padding-left: 0px;
             width: 100%;
-        }         
+        }
 
         h3 {
             font-size: 20px;
             margin-bottom: 10px;
         }
-    }    
+    }
 
     @include element('item-date') {
         display: block;
