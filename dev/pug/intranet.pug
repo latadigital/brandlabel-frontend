@@ -3,6 +3,8 @@ extends layouts/default.pug
 block vars
     - pageTitle = 'Intranet'
     - navVisible = false
+    - intranet = true
+    - include = false
 
 block content
     .c-intranet
@@ -16,10 +18,11 @@ block content
                 .c-intranet__products
                     .c-intranet__product.c-intranet__product--active
                         img(src="img/intranet-logo-step.jpg")
-                    .c-intranet__product.c-intranet__product--no-contratado
+                    .c-intranet__product
                         img(src="img/intranet-logo-ax.jpg")
                     .c-intranet__product.c-intranet__product--no-contratado
                         img(src="img/intranet-logo-ryh.jpg")
+                .clearfix
 
         .c-intranet__productos
             .c-intranet__status
@@ -31,7 +34,7 @@ block content
                         p Reporte avance: última actualización dd/mm/yy
                         .c-intranet__advance-link Ver más detalles del proyecto
                     .c-intranet__contacto
-                        h2 Mi contacto en B&L
+                        h2 Mi Product Manager en B&L:
                         .c-intranet__contacto-thumb
                             img(src="/img/intranet-contacto-thumb.jpg")
                         h3 Nombre Apellidos
@@ -68,7 +71,7 @@ block content
                         h2 ¡Contacta a tu sales manager!
 
                     .c-intranet__contacto.c-intranet__contacto--noPadTop
-                        h2.mBottom20 Mi contacto en B&L
+                        h2.mBottom20 Mi Technical Sales Manager en B&L:
                         .c-intranet__contacto-thumb.c-intranet__contacto-thumb--mBottom
                             img(src="img/intranet-contacto-thumb.jpg")
                         h3 Nombre Apellidos
@@ -88,6 +91,5 @@ block content
                                         p dd/mm/yy
                                         a.c-intranet__fecha-link Descargar
                             a.c-intranet__reportes-link Ver más
-
 
 block append scripts

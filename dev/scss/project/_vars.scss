@@ -19,3 +19,17 @@ $transition-duration: 250ms !default;
 // Margins & Paddings
 $numbers: 0, 10, 20, 30, 40, 50, 60, 70, 80, 90;
 $sides: t top,r right,b bottom,l left;
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    }
+.clearfix { display: inline-table; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */

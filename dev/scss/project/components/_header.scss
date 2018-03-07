@@ -13,7 +13,6 @@
 
 	@include element('inner') {
 		height: 1%;
-		overflow: hidden;
 		margin: 0px auto;
 		max-width: 1200px;
 	}
@@ -50,8 +49,7 @@
 
 	@include element('main') {
 		height: 1%;
-		overflow: hidden;
-		padding: 25px 0px;
+		// padding: 25px 0px;
 		@media(max-width:1200px) {
 			padding: 25px 10px;
 		}
@@ -59,11 +57,11 @@
 
 	@include element('brand') {
 		float: left;
+		margin: 23px 0px;
 	}
 
 	@include element('nav') {
 		float: right;
-		margin: 5px 0px;
 		@media(max-width:992px) {
 			display: none;
 		}		
@@ -71,21 +69,58 @@
 		ul {
 			li {
 				display: inline-block;
-				border-right: 1px solid $color_text;
+				position: relative;
+				padding: 30px 0px;
+
 				&:last-child {
-					border-right: none;
+					a {
+						border-right: none;
+					}
 				}
 
 				a {
 					text-decoration: none;
 					color: $color_text;
 					font-size: 14px;
+					border-right: 1px solid $color_text;
 					text-transform: uppercase;
 					transition: color $transition-duration;
-					padding: 0px 20px;
+					padding: 5px 20px;
 					&:hover {
 						color: $color_hover;
 					}
+				}
+
+				&:hover {
+					.c-header__subnav {
+						max-height: 500px;
+					}
+				}
+			}
+		}
+	}
+
+	@include element('subnav') {
+		position: absolute;
+		left: 0px;
+		bottom: -128px;
+		background: #fff;
+		width: 100%;
+		max-height: 0;
+		overflow: hidden;
+		z-index: 99;
+
+		ul {
+			padding: 10px 0px;
+
+			li {
+				padding: 10px 0px;
+				text-align: center;
+				width: 100%;
+
+				a {
+					font-size: 12px;
+					border: none;
 				}
 			}
 		}
@@ -99,6 +134,7 @@
 	position: fixed;
 	z-index: 9999;
 	width: 100%;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.26);
 
 	.c-header__inner {
 		height: 79px;

@@ -1,11 +1,14 @@
 header.c-header
 	.c-header__buttons
 		.c-header__inner
-			a(href="intranet.html").c-header__link Portal Clientes
+			if intranet
+				a(href="#").c-header__link Cerrar Sesión
+			if include
+				a(href="intranet.html").c-header__link Portal Clientes
 			a(href="/#!/goForm").c-header__link.c-header__link--lightblue Contacto
 	.c-header__main
 		.c-header__inner
-			a.c-header__brand(href='#')
+			a.c-header__brand(href='index.html')
 				img.c-header__image(src='img/header-logo.png' alt='Brand Label')
 			if navVisible
 				nav.c-header__nav
@@ -15,6 +18,15 @@ header.c-header
 						li
 							a(href="quienes-somos.html") Quienes somos
 						li
-							a(href="productos.html") Productos
+							a(href="landing.html") Productos
+							.c-header__subnav
+								ul
+									li
+										a(href="landing.html") RyH
+									li
+										a(href="landing.html") Ax Semantics
+									li
+										a(href="landing.html") STEP
 						li
 							a(href="blog.html") Blog
+			.clearfix
