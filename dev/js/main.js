@@ -1,10 +1,12 @@
 $(document).ready(function() {
 	$(window).scroll(function(){
 		var winScroll = $(window).scrollTop();
-		if(winScroll > 51) {
-			$('.c-header__main').addClass('nav__fixed');
+		if(winScroll > 130) {
+			$('.c-header').addClass('nav__fixed');
+			$('body').css('padding-top', 130)
 		}else{
-			$('.c-header__main').removeClass('nav__fixed');
+			$('.c-header').removeClass('nav__fixed');
+			$('body').css('padding-top', 0)
 		}
 	});
 

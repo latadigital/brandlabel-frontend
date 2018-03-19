@@ -1,5 +1,6 @@
 @include component('header') {
 	border-bottom: 1px solid #d5d5d5;
+	background: #fff;
 
 	@include element('buttons') {
 		background: #f9f9f9;
@@ -130,13 +131,8 @@
 .nav__fixed {
 	background: #fff;
 	top: 0px;
-	height: 79px;
 	position: fixed;
 	z-index: 9999;
 	width: 100%;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-
-	.c-header__inner {
-		height: 79px;
-	}
 }
