@@ -22,6 +22,11 @@ $(document).ready(function() {
 		e.preventDefault();
 	});
 
+	$('a[href="/!#/open-nav"]').click(function (e) {
+		$('.c-header__mobileNav').toggleClass('c-header__mobileNav--tall');
+		e.preventDefault();
+	});
+
 	$('.firstProduct').viewportChecker({
 		classToAdd: 'visible',
 		classToAddForFullView: 'full-visible',

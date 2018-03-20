@@ -18,6 +18,27 @@
 		max-width: 1200px;
 	}
 
+	@include element('mobileBtn') {
+		position: absolute;
+		top: 0px;
+		display: none;
+		right: 0px;
+		height: 100%;
+		width: 70px;
+		text-align: center;
+		font-size: 25px;
+		@media(max-width: 992px){
+			display: block;
+		}
+
+		span {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
 	@include element('link') {
 		background: #737373;
 		display: inline-block;
@@ -48,12 +69,41 @@
 		}
 	}
 
+	@include element('mobileNav') {
+		clear: both;
+		max-height: 0px;
+		overflow: hidden;
+		transition: max-height 250ms;
+		width: 100%;
+
+		ul {
+			padding: 0px 0px 20px;
+
+			li {
+				a {
+					text-align: center;
+					display: block;
+					line-height: 40px;
+				}
+			}
+		}
+
+		@include modifier('tall') {
+			max-height: 500px;
+		}
+	}
+
 	@include element('main') {
 		height: 1%;
+		position: relative;
 		// padding: 25px 0px;
 		@media(max-width:1200px) {
 			padding: 25px 10px;
 		}
+
+		@media(max-width:992px) {
+			padding: 0px 10px;
+		}		
 	}
 
 	@include element('brand') {
