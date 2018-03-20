@@ -1,5 +1,6 @@
 @include component('productos') {
     background: #f9f9f9;
+    position: relative;
 
     @include element('inner') {
         max-width: 1200px;
@@ -103,6 +104,7 @@
     @include element('image') {
         float: left;
         text-align: center;
+        opacity: 0;
         width: 50%;
 
 				@media(max-width: 1280px) {
@@ -127,6 +129,7 @@
 
     @include element('separator') {
         text-align: center;
+        opacity: 0;
         width: 100%;
         @media(max-width:1050px) {
             display: none;
@@ -139,6 +142,22 @@
             width: 100%;
         }
     }
+
+    @include element('gifLeft') {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 354px;
+    }
+
+    @include element('gifRight') {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        height: 100%;
+        width: 354px;
+    }     
 }
 
 .on-mobile {

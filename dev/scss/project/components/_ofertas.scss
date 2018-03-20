@@ -109,6 +109,35 @@
             color: #31c7d9;
         }
     }
+
+    @include element('info') {
+        clear: both;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 250ms;
+
+        .wrap__info {
+            padding: 30px 0px;
+        }
+
+        p {
+            line-height: 26px;
+            margin-bottom: 0px;
+        }
+
+        ul {
+            padding: 15px 0px;
+
+            li {
+                line-height: 26px;
+                padding-left: 20px;
+            }
+        }
+
+        @include modifier('tall') {
+            max-height: 500px;
+        }
+    }
 }
 
 @include component('carrusel') {
