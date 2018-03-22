@@ -17,12 +17,15 @@
         text-align: center;
         margin-bottom: 30px;
         text-transform: uppercase;
+        position: relative;
+        z-index: 10;
     }
 
     @include element('item') {
         height: 1%;
         overflow: hidden;
         position: relative;
+        z-index: 10;
         @media(max-width:1200px) {
             padding: 0px 20px;
         }
@@ -73,6 +76,7 @@
         line-height: 24px;
         margin-bottom: 30px;
         @media(max-width:1050px) {
+            margin: 0px auto 30px;
             width: 90%;
         }
     }
@@ -106,13 +110,13 @@
         text-align: center;
         opacity: 0;
         width: 50%;
-
-				@media(max-width: 1280px) {
-					width: 40%;
-				}
+        @media(max-width: 1280px) {
+            width: 40%;
+        }
 
         @media(max-width:1050px) {
             margin-bottom: 20px;
+            opacity: 1;
             width: 100%;
         }
 
@@ -131,6 +135,8 @@
         text-align: center;
         opacity: 0;
         width: 100%;
+        position: relative;
+        z-index: 10;
         @media(max-width:1050px) {
             display: none;
         }
@@ -149,6 +155,10 @@
         top: 0px;
         height: 100%;
         width: 354px;
+        z-index: 1;
+        @media(max-width: 700px) {
+            display: none;
+        }
     }
 
     @include element('gifRight') {
@@ -157,6 +167,10 @@
         top: 0px;
         height: 100%;
         width: 354px;
+        z-index: 1;
+        @media(max-width: 700px) {
+            display: none;
+        }        
     }     
 }
 
